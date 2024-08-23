@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI HTML</title>
+    <style>
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
+            color: #333;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer{
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Trabajo Practico HTML</h1>
+        </header>
+    
+        <nav>
+            <h5>ejemplo 1</h5>
+            <h5>ejemplo 2</h5>
+            <h5>ejemplo 3</h5>
+        </nav>
+    
+        <section id="Extructura">
+            <h1>1.Extructura Básica del documento html</h1>
+        </section>
+            <article class="section">
+                <p>Este documento HTML tiene una estructura básica
+                    que incluye la declaracion DOCTYPE,etiquetas de 
+                    metadatos y un titulo.
+                        </p>
+            </article>
+        <section>
+            <h2>2.Encabezado y Propiedades de Texto</h2>
+        </section>
+    
+        <article class="section">
+
+                <h3><strong>Esto es texto en negritas</strong></h3>
+                <h4><i>Esto es texto en cursiva</i></h4>
+                <h5><u>Esto es un texto subrayado</u></h5>
+                <h6 style="font-weight: bold; color: red;">Este texto está en negrita y en color rojo.</h6>
+                
+            </article>
+
+     <section>
+        <h2>3.Divisiones y agrupaciones de contenido </h2>
+        </section>
+    
+        <article class="section">
+           <div>
+            <h4>division 1</h4>
+            <p>texto agrupado en la division 1</p>
+           </div>
+
+           <div>
+            <h4>division 2</h4>
+            <p>texto agrupado en la division 1</p>
+           </div>
+
+           <div>
+            <h4>division 3</h4>
+            <p>texto agrupado en la division 1</p>
+           </div>
+
+            </article>
+
+             <section>
+                <h2>4.Enlaces y Listas</h2>
+        </section>
+    
+        <article class="section">
+                <h3>visite nuestro <a href="https://www.google.com" target="_blank">Enlace Externo</a></h3>
+                <h3>Enlaces Internos</h3>
+                    <ul>
+                        <li><a href="#Extructura">Ir a Extructura</a></li>
+                        <li><a href="#multimedia">Ir a Multimedia</a></li>
+                        <li><a href="#formulario">Ir a Formulario</a></li>
+                        
+                     </ul>
+    
+                     <h3>Lista Desordenada</h3>
+                    <ul>
+                        <li>Primer Item de una lista desordenada</li>
+                        <li>Segundo Item de una lista desordenada</li>
+                        <li>Tercer Item de una lista desordenada</li>
+                     </ul>
+    
+    
+                <h3>Lista Ordenada</h3>
+                    <ol>
+                        <li>Primer Item de una lista ordenada</li>
+                        <li>Segundo Item de una lista ordenada</li>
+                        <li>Tercer Item de una lista ordenada</li>
+                    </ol>
+            </article>
+
+         <section id="multimedia">
+            <h2>5.Elementos Multimedia</h2>
+        </section>
+    
+            <article class="section">
+                <div>
+                <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg" 
+        width="300px" height="200px" alt="es una imagen" 
+        />
+
+        <video
+            src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+            controls
+            width="200px"
+            height="200px"
+        />
+    </div>
+    <div>
+        <audio
+        src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+        controls
+        autoplay
+            />
+        </div>
+            </article>
+
+         <section>
+            <h2>6. Tablas</h2>
+        </section>
+    
+             <article class="section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Columna 1</th>
+                            <th>columna 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>dato1</td>
+                            <td>dato2</td>
+                        </tr>
+                        <tr>
+                            <td>dato3</td>
+                            <td>dato4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </article>
+            
+         <section id="formulario">
+            <h2>7. Formularios</h2>
+        </section>
+    
+             <article class="section">
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="example@example.com"/>
+                    </div>
+                    <div>
+                     <label>Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre"/>
+                    </div>
+                    <div>
+                    <label>Mensaje</label>
+                    <textarea placeholder="informacion extra"></textarea>
+                     </div>
+                     <div>
+                    <button type="submit">Enviar formulario</button>
+                     </div>
+                    
+            </article>
+
+
+
+            
+
+
+        <footer>
+           <h4>Este es el pie de pagina</h4>
+        </footer>
+    </body>
+</html>
